@@ -18,7 +18,7 @@ const VideoComponent = (props, onVideoStartedPlaying, resumeAfterSeek, onVideoEn
 	};
 
 	// Template
-	const template = '<video class="map-video" src="https://s3.amazonaws.com/eytyy.com/public/videos/welfare.mp4" preload />';
+	const template = '<video class="map-video" src="https://s3.amazonaws.com/eytyy.com/public/videos/video.mp4" preload />';
 	
 	DOM.container = document.querySelector('.video');
 	DOM.container.innerHTML = template;
