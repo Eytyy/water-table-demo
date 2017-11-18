@@ -1,0 +1,103 @@
+.textOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transition: opacity 500ms ease-in-out;
+  text-align: center;
+}
+
+.idle-title {
+  font-family: 'ZeitungMonoPro-Bold';
+  font-size: 80px;
+}
+
+.intro-console {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  a {
+    color: #FFF;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+  }
+  .led {
+    height: 8px;
+    width: 29px;
+    border-radius: 1px;
+    border: 1px solid;
+    display: inline-block;
+  }
+  .cta {
+    display: inline-block;
+    width: 200px;
+    vertical-align: bottom;
+    line-height: 1.2;
+  }
+  .knobs {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    top: 3px;
+  }
+  .kr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .tl {
+    margin-left: 0px;
+    margin-bottom: 15px;
+    .knob {
+      margin: 0;
+    }
+  }
+  .knob {
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+  }
+  .knob--s {
+    width: 7px;
+    height: 7px;
+  }
+  .knob--l {
+    width: 8px;
+    height: 8px;
+  }
+  .knob--ol {
+    border: 1px solid #FFF;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 3px;
+      height: 1px;
+      background: #fff;
+      bottom: -4px;
+      left: 1px;
+    }
+  }    
+  .knob--f {
+    background: #FFF;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 1px;
+      background: #fff;
+      top: -4px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+}
+

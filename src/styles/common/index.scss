@@ -1,0 +1,44 @@
+@import 'reset';
+@import 'fonts';
+@import 'base';
+@import 'icons';
+
+h1 {
+  font-family: 'ZeitungMonoPro-Bold';
+  font-size: 90px;
+  margin-top: 0;
+}
+
+.step-1 {
+  margin: 20px 0;
+}
+
+.step-2 {
+  margin: 20px 0;
+}
+
+.launch-screen {
+  display: flex;
+  max-width: 1020px;
+  margin: 100px auto 0;
+  .left {
+    flex: 0 0 80%;
+    padding-right: 100px;
+    p {
+      line-height: 2;
+      font-size: 16px;
+      margin-bottom: 2em;
+    }
+  }
+  a {
+    color: #FFF;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 220px;
+  }
+  .link {
+    margin-bottom: 50px;
+  }
+}
+

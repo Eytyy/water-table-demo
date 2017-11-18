@@ -1,0 +1,9 @@
+.messages {
+  opacity: 0;
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  transition: opacity 400ms linear;
+  color: #FFF;
+  right: 0;
+}

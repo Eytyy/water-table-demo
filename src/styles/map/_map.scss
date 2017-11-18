@@ -1,0 +1,55 @@
+.idle,
+.video,
+.animation,
+.dashboard,
+.textOverlay,
+.data {
+  background: #000;
+}
+
+.idle,
+.video,
+.animation,
+.info,
+.dashboard,
+.textOverlay,
+.data {
+  opacity: 0;
+  transition: opacity 300ms linear;
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.idle,
+.video,
+.animation,
+.info,
+.data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+.info {
+  height: 100%;
+}
+
+.video {
+  height: 100%;
+}
+
+
+.debug {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  z-index: 20;
+  font-size: 24px;
+  color: yellow;
+  * {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,82 @@
+#controller {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.controller__group {
+  margin-bottom: 50px;
+}
+
+.button-group {
+  display: inline-block;
+  margin-right: 100px;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button-label {
+  margin-bottom: 25px;
+  font-size: 18px;
+  display: block;
+  text-align: left;
+}
+
+.btn {
+  position: relative;
+  appearance: none;
+  background: #FFF;
+  border: 1px solid #FFF;
+  color: #000;
+  font-size: 16px;
+  font-family: 'ZeitungMonoPro-Regular';
+  display: inline-block;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  outline: 0;
+  cursor: pointer;
+}
+
+.start .btn {
+  width: 100px;
+  height: 100px;
+}
+
+.label {
+  color: #FFF;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.controller-set {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.common {
+  display: flex;
+  opacity: 0;
+  transition: opacity 300ms linear;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.start .button-group {
+	position: relative;
+}
+
+.common {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+  .button-group:nth-child(2) {
+    margin-left: -70px;
+  }
+}

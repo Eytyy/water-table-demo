@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Water Table</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/map.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- fuckery: for keeping track of shit -->
+      <!-- <div class="debug"></div> -->
+      <!-- for big texts -->
+      <div class="textOverlay"></div>
+      <!-- try to guess -->
+      <div class="video"></div>
+      <!-- The thing on the right -->
+      <div class="dashboard">
+        <div class="dashboard__block dashboard__overlay"></div>
+        <div class="dashboard__block dashboard__text"></div>
+        <div class="dashboard__block dashboard__animation"></div>
+      </div>
+      <!-- Information Svgs -->
+      <div class="info"></div>
+      <!-- Interface messages -->
+      <div class="messages"></div>
+      <div class="data">
+        <div class="data__visualization"></div>
+        <div class="data__dashboard"></div>
+      </div>
+      <!-- Video Timeline -->
+      <div class="timeline">
+        <div class="timeline__rail">
+          <div class="timeline__progress"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/map.bundle.js" ></script>
+  </body>
+</html>

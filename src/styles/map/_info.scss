@@ -1,0 +1,27 @@
+// svgs overlays
+.info {
+  z-index: 10;
+}
+
+.info__screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.info__text {
+  background-position: 87px 0;
+}
+
+.info__topography  {
+  background-position: 81px 6px;
+}
