@@ -33,14 +33,14 @@
   height: calc(100% - 100px);
 }
 
+.video {
+  height: 1920px;
+  position: relative;
+}
+
 .info {
   height: 100%;
 }
-
-.video {
-  height: 100%;
-}
-
 
 .debug {
   position: fixed;

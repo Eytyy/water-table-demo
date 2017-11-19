@@ -9,8 +9,8 @@ const AnimationComponent = (props) => {
 	};
 	
 	const margin = { top: 0, right: 0, bottom: 0, left: 0 };
-	const width = 400 - margin.left - margin.right;
-	const height = 400 - margin.top - margin.bottom;
+	const width = window.innerWidth - margin.left - margin.right;
+	const height = window.innerHeight - 200 - margin.top - margin.bottom;
 	
 	const svg = d3.select('.data__visualization')
 		.append('svg')
